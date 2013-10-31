@@ -1,0 +1,86 @@
+@defaultSize : 2rem;
+@mag : 1;
+.margins {
+	margin-top : 0.5rem * @mag;
+	margin-right: 0.5rem * @mag;
+	margin-bottom: 0.5rem * @mag;
+	margin-left: 0rem * @mag;
+}
+
+.paddings {
+	padding-top : 0.5rem * @mag;
+	padding-right: 0.5rem * @mag;
+	padding-bottom: 0.5rem * @mag;
+	padding-left: 0rem * @mag;
+}
+
+.ui-multibuttonentry {
+	background: rgb(29,38,60);
+	padding: 0.5rem*@mag 1.625rem*@mag 0.5rem*@mag 1.625rem*@mag;
+
+}
+
+.ui-label {
+	font-size: @defaultSize;
+	height: 4.3rem;
+	margin-right: 8px;
+	color: rgb(250,250,250);
+	line-height: 36px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.ui-input {
+	border: hidden;
+	font-size: @defaultSize;
+	text-align: left;
+	color: rgb(250,250,250);
+	background: rgb(29,38,60);
+	padding: 17px 12px 17px 12px;
+	vertical-align: middle;
+	position: relative;
+	.margins;	
+}
+
+.ui-address {
+	color: #FAFAFA;
+	background: green;
+	font-size: 36px;
+	text-decoration: none;
+	text-align: center;
+	width: 30px;
+	margin: 26px 0px 26px 0px;
+	line-height: 32px;
+	float: right;
+}
+.ui-textbtn {
+	display: inline-block;
+	font-size: 32px;
+	background: rgb(82,87,103);
+	margin: 8px 8px 8px 0px;
+	padding: 17px 12px 17px 12px;
+	color: rgb(255,255,255);
+	vertical-align: middle;
+	text-overflow : ellipsis;
+	overflow: hidden; 
+	white-space: nowrap;
+	position: relative;
+	border-radius: 4px;
+}
+
+.ui-textbtn-selected {
+	background: rgb(43,58,175);
+}
+
+.ui-textbtn-focusout {
+	color: rgb(255,255,255);
+	font-size: 32px;
+	text-align: center;
+	vertical-align: middle;
+}
+@media all and (min-width: 480px) {
+	.ui-multibuttonentry h1 {
+		font-size: 20px;
+		text-align: center;
+	}
+}
